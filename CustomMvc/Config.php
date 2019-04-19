@@ -21,7 +21,7 @@ spl_autoload_register(function($class) {
 });
 
 ##Banco de dados
-define('DATABASE','zadmin_chat');
+define('DATABASE','nomeDoBandoDeDados');
 define('HOST','localhost');
 define('USER','root');
 define('PASS','');

@@ -24,9 +24,9 @@ spl_autoload_register(function($class) {
 define('DATABASE','zadmin_chat');
 define('HOST','localhost');
 define('USER','root');
-define('PASS','root');
+define('PASS','');
 
-##Definindo o template e carregando dependencias como css e js necessarias
+##Definindo o template a ser carregado e arquivos config nos templates
 define('TEMPLATE_SELECTED','bootstrap');
 include_once(TEMPLATE . TEMPLATE_SELECTED . DIRECTORY_SEPARATOR . 'Config.php');
 

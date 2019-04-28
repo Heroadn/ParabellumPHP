@@ -5,6 +5,7 @@
         <title><?php echo $this->page_title;?></title>
         <?php
             $this->loadCss();
+            $this->loadJs();
         ?>
     </head>
     <body>
@@ -46,10 +47,6 @@
             </div>
         </div>
     </body>
-
-    <?php
-        $this->loadJs();
-    ?>
 </html>
 
 

@@ -1,12 +1,13 @@
 <?php
 
 class Application{
-    protected $controller  = 'IndexController';
-    protected $action = 'Index';
+    protected $controller  = 'UsuarioController';
+    protected $action = 'Cadastrar';
     protected $prams = [];
 
     public  function __construct(){
         $this->parseURL();
+        session_start();
         if(file_exists(CONTROLLER . $this->controller . '.php')){
             $this->controller = new $this->controller;
 

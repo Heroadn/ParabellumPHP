@@ -1,21 +1,7 @@
 <?php
     echo '<style>tr:nth-child(even) {background-color: #f2f2f2;}</style>';
     echo '<table id="tabela" style="width:100%;">';
-        foreach ($Usuarios[0] as $key => $teste) {
-            echo '<th>';
-                echo $key;
-            echo '</th>';
-        }
-
-        foreach ($Usuarios as $teste){
-            echo '<tr>';
-                foreach ($teste as $value){
-                    echo '<td>';
-                        echo $value . '<br>';
-                    echo '</td>';
-                }
-            echo '</tr>';
-        }
+        //Carregada via ajax
     echo '</table>';
 ?>
 <button type="button" data-toggle="modal" data-target="#modal">Cadastrar</button>

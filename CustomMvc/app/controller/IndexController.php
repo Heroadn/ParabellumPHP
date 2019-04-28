@@ -3,8 +3,8 @@
 
 class IndexController extends Controller
 {
-    public function index($id='',$name=''){
-        $this->view('Index',['id' =>$id, 'name' =>$name]);
+    public function Index($id='',$name=''){
+        $this->view(['id' =>$id, 'name' =>$name]);
         $this->view->page_title = 'INDEX';
         $this->view->render();
     }

@@ -26,6 +26,7 @@ class View extends Template
     public function ajax($extension = 'php'){
         $path = VIEW . $this->view_file .'.'.$extension;
         if(file_exists($path)){
+            extract($this->view_data);
             include($path);
         }
     }

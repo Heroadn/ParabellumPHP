@@ -23,7 +23,7 @@ class Template
     public function loadCss(){
         if(!$this->css_loaded){
             foreach(unserialize(CSS_HEADER) as $value){
-                echo '<link href="'.CSS . $value .'" rel="stylesheet">';
+                echo '<link href="'. CSS . $value .'" rel="stylesheet">';
                 $this->css_loaded = true;
             }
         }

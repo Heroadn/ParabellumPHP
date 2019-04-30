@@ -8,9 +8,9 @@ class AjaxController extends Controller{
         $this->daoUsuarios = new DaoUsuarios;
     }
 
-    public function Mensagem($id_sala=''){
-        $this->set('Usuarios',$this->daoUsuarios->findAll());
-        $this->view(['id_sala' =>$id_sala],'Tabela');
+    public function Listar($id_sala=''){
+        $Usuarios = $this->daoUsuarios->findAll();
+        $this->view(['id_sala' =>$id_sala,'Usuarios'=>$Usuarios],'Tabela');
         $this->view->page_title = 'INDEX';
         $this->view->ajax();
     }

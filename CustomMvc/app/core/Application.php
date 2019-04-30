@@ -15,6 +15,9 @@ class Application{
                 //[$this->controller,$this->action] ->class->função a ser chamada
                 //$this->prams -> parametros a serem passados a função class->função($this->prams[0],$this->prams[1],...)
                 call_user_func_array([$this->controller,$this->action],$this->prams);
+            }else{
+                //Adicionar Exception Handler global, tipo um controllerAdvice SpringBoot
+                die('Pagina nao encontrada, verifique se a pasta esta com o nome certo e o arquivo requisitado');
             }
         }
     }

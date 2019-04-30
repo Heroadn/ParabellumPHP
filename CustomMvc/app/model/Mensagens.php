@@ -6,6 +6,6 @@ class Mensagens
     public $id;
     public $mensagem;
     public $data;
-    public $usuario_id;
+    public $usuarios_id;
     public $salas_id;
 }

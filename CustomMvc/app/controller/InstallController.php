@@ -5,9 +5,7 @@ class InstallController extends Controller
 {
     public function Controller(){
         $files = array_diff(scandir(CONTROLLER), array('.', '..'));
-        $this->set("Files",$files);
-
-        $this->view([],'Controller');
+        $this->view(["Files"=>$files],'Controller');
         $this->view->page_title = 'Install controller';
         $this->view->render();
     }
@@ -16,7 +14,7 @@ class InstallController extends Controller
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $nome = filter_input(INPUT_POST, 'nome');
             $controller = fopen(CONTROLLER . $nome . 'Controller.php', "w");
-            $txt = "<?php\nclass ".$nome."Controller extends Controller\n{\n    public function action(\$id='',\$name=''){\n        //view(nomeView,paramentros /id/name);\n        \$this->view('Index',['id' =>\$id, 'name' =>\$name]);\n        //Titulo da Pagina\n        \$this->view->page_title = 'Titulo';\n        //Carrega a View\n        \$this->view->render();\n    }\n}\n";
+            $txt = "<?php\nclass ".$nome."Controller extends Controller\n{\n    public function action(\$id='',\$name=''){\n        //view(paramentros /id/name,nomeView); por padrao nomeView se referece ao nome do metodo\n        \$this->view(['id' =>\$id, 'name' =>\$name],'Index');\n        //Titulo da Pagina\n        \$this->view->page_title = 'Titulo';\n        //Carrega a View\n        \$this->view->render();\n    }\n}\n";
             fwrite($controller, $txt);
 
             $path = VIEW . $nome;
@@ -29,7 +27,13 @@ class InstallController extends Controller
     }
 
     public function Template(){
-        $this->view([],'Template');
+        $this->view([],);
+        $this->view->page_title = 'Install template';
+        $this->view->render();
+    }
+
+    public function Nav(){
+        $this->view([]);
         $this->view->page_title = 'Install template';
         $this->view->render();
     }
@@ -62,7 +66,7 @@ class InstallController extends Controller
     }
 
     public function Dao(){
-        $this->view('Dao',[]);
+        $this->view([],'Dao');
         $this->view->page_title = 'Install dao';
         $this->view->render();
     }

@@ -1,5 +1,7 @@
 <?php
-
+/*
+ * @author Benjamin de Castro Azevedo Ponciano
+*/
 
 class View extends Template
 {
@@ -15,7 +17,7 @@ class View extends Template
     public function __construct($view_file, $view_data){
         $this->view_file = $view_file;//Arquivo a ser chamado
         $this->view_data = $view_data;//Variaveis para a view
-        $this->page_title = (isset($this->page_title) ? $this->page_title : $this->getController());//<Title></title>
+        $this->page_title = (isset($this->page_title) ? $this->page_title : 'NONE');//<Title></title>
     }
 
     /** Função que carrega a view para usuario

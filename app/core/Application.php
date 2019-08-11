@@ -4,8 +4,8 @@ use controller;
 use Exception;
 
 class Application{
-    protected $controller  = 'SalaController';
-    protected $action = 'Destaque';
+    protected $controller  = 'IndexController';
+    protected $action = 'Index';
     protected $prams = [];
 
     /**

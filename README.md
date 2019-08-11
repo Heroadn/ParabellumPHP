@@ -1,4 +1,4 @@
-# ChatZapParabellum
+# Parabellum
 
 configure o framework em config.php na raiz
 

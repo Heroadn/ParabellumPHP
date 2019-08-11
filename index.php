@@ -23,7 +23,7 @@ define('UPLOADS','app'.DIRECTORY_SEPARATOR.'libs'.DIRECTORY_SEPARATOR.'uploads' 
 $modules = [ROOT,APP,CORE,CONTROLLER,TEMPLATE,MODEL,LIBS];
 
 #Carregando Configuraçôes de Banco de dados, template e ExceptionHandler
-include('Config.php');
+include('config.php');
 include_once(TEMPLATE . DIRECTORY_SEPARATOR . 'config.php');
 
 #Mensagem de erro quanto estiver em ambiente de desenvolvimento

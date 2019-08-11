@@ -26,8 +26,6 @@ $modules = [ROOT,APP,CORE,CONTROLLER,TEMPLATE,MODEL,LIBS];
 include('Config.php');
 include_once(TEMPLATE . DIRECTORY_SEPARATOR . 'Config.php');
 
-
-/*
 #Mensagem de erro quanto estiver em ambiente de desenvolvimento
 if(true){ini_set('display_errors',1);error_reporting(-1);}
 date_default_timezone_set('America/Sao_Paulo');
@@ -36,4 +34,4 @@ set_include_path(get_include_path() .  PATH_SEPARATOR . implode(PATH_SEPARATOR,$
 include ROOT . 'vendor/autoload.php';
 
 ##Init
-new core\Application;*/
+new core\Application;

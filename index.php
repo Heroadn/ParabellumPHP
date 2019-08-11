@@ -24,7 +24,7 @@ $modules = [ROOT,APP,CORE,CONTROLLER,TEMPLATE,MODEL,LIBS];
 
 #Carregando Configuraçôes de Banco de dados, template e ExceptionHandler
 include('Config.php');
-include_once(TEMPLATE . DIRECTORY_SEPARATOR . 'Config.php');
+include_once(TEMPLATE . DIRECTORY_SEPARATOR . 'config.php');
 
 #Mensagem de erro quanto estiver em ambiente de desenvolvimento
 if(true){ini_set('display_errors',1);error_reporting(-1);}

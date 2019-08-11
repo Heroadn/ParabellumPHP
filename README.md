@@ -1,3 +1,3 @@
 # ChatZapParabellum
 
-renomeie a config.sample.php para config.php
+configure o framework em config.php na raiz

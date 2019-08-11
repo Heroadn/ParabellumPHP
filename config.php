@@ -1,7 +1,7 @@
 <?php
 #Definindo o template e pastas CSS e JS
 define('TEMPLATE_SELECTED','Bootstrap');
-define('DEFAULT_PAGE','/Usuario/Cadastrar');
+define('DEFAULT_PAGE','/Index');
 
 #Recursos CSS, JS e Imagens
 define('CSS' , LIBS .  'css' . DIRECTORY_SEPARATOR);

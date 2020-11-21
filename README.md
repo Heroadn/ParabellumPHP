@@ -36,15 +36,8 @@
 │   │       ├── index.php
 │   │       └── Nav.php
 │   └── view
-│       ├── Index
-│       │   └── Index.php
-│       └── Install
-│           ├── Controller_Model.php
-│           ├── Controller.php
-│           ├── Dao_Model.php
-│           ├── Dao.php
-│           ├── Template_Model.php
-│           └── Template.php
+│       └── Index
+│           └── Index.php
 ├── AutoLoader.php
 ├── composer.json
 ├── config.php

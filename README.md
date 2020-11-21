@@ -1,11 +1,10 @@
-<head><link rel="stylesheet" href="resource://content-accessible/plaintext.css"></head>
+<head><link rel="stylesheet" href=""></head>
 
 # Parabellum
-
   desenvolvido com o intuito de compreensão do funcionamento de um framework MVC
 
 ## Layout
-<code>
+ ```
   app => controller
     //Onde ficam os controller da aplicação
   app => core
@@ -16,7 +15,7 @@
     //
    app => view
    //
- </code>
+  ```
    
 ## Config
 configure o framework em config.php na raiz

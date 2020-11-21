@@ -1,3 +1,5 @@
+<head><link rel="stylesheet" href="resource://content-accessible/plaintext.css"></head>
+
 # Parabellum
 
   desenvolvido com o intuito de compreensão do funcionamento de um framework MVC

@@ -5,16 +5,50 @@
 
 ## Layout
  ```
-  app => controller
-    //Onde ficam os controller da aplicação
-  app => core
-    //
-  app => model
-    //
-  app => template
-    //
-   app => view
-   //
+├── app
+│   ├── controller
+│   │   └── IndexController.php
+│   ├── core
+│   │   ├── Application.php
+│   │   ├── Assert.php
+│   │   ├── Auth.php
+│   │   ├── Controller.php
+│   │   ├── Dao.php
+│   │   ├── Db.php
+│   │   ├── JWT.php
+│   │   ├── Template.php
+│   │   ├── Token.php
+│   │   ├── Upload.php
+│   │   └── View.php
+│   ├── libs
+│   │   ├── css
+│   │   ├── img
+│   │   ├── js
+│   │   └── webfonts
+│   ├── model
+│   │   └── Usuarios.php
+│   ├── template
+│   │   ├── bootstrap
+│   │   │   ├── Index.php
+│   │   │   └── Nav.php
+│   │   ├── config.php
+│   │   └── Install
+│   │       ├── index.php
+│   │       └── Nav.php
+│   └── view
+│       ├── Index
+│       │   └── Index.php
+│       └── Install
+│           ├── Controller_Model.php
+│           ├── Controller.php
+│           ├── Dao_Model.php
+│           ├── Dao.php
+│           ├── Template_Model.php
+│           └── Template.php
+├── AutoLoader.php
+├── composer.json
+├── config.php
+└── index.php
   ```
    
 ## Config

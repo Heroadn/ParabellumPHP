@@ -19,7 +19,8 @@ class Application{
         if(file_exists(CONTROLLER . $this->controller . '.php')){
             $namespaceWithController = 'controller\\'.$this->controller;
             $this->controller = new $namespaceWithController;
-
+            
+            // Verifica se o controler tem a ação
             if(method_exists($this->controller,$this->action)){
                 /* @version
                 * [$this->controller,$this->action] ->class->função a ser chamada

@@ -3,7 +3,11 @@ namespace core;
 
 class Token
 {
-    const HEADER = ['alg' => 'HS256','typ' => 'Token'];
+    const HEADER = [
+        'alg' => 'HS256',
+        'typ' => 'Token'
+    ];
+    
     const SECRET = 'ad%282629240sndfls$';
 
     public static function objToPayload($obj)
